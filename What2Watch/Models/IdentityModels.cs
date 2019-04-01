@@ -29,5 +29,13 @@ namespace What2Watch.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Emotion> Emotions { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<MovieCollection> MovieCollections { get; set; }
+        public DbSet<MovieEmotion> MovieEmotions { get; set; }
+        public DbSet<MovieStatus> MovieStatuses { get; set; }
     }
 }
