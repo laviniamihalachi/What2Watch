@@ -10,10 +10,10 @@ declare interface RouteInfo {
 
 //WHERE SIDEBAR HAPPENS
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Explore',  icon: 'dashboard', class: '' },
-    { path: '/user-profile', title: 'Profile',  icon:'person', class: '' },
-    { path: '/table-list', title: 'Collection',  icon:'content_paste', class: '' },
-    { path: '/upgrade', title: 'Logout',  icon:'unarchive', class: 'active-pro' },
+    { path: '/explore', title: 'Explore',  icon: 'dashboard', class: '' },
+    { path: '/profile', title: 'Profile',  icon:'person', class: '' },
+    { path: '/collection', title: 'Collection',  icon:'content_paste', class: '' },
+    { path: '/logout', title: 'Logout',  icon:'unarchive', class: 'active-pro' },
 ];
 
 @Component({
