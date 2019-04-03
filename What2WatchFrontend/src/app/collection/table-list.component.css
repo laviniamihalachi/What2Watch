@@ -1,0 +1,31 @@
+.card-header {
+  text-align: center;
+}
+
+.card {
+  height: 300px;
+  text-align: center;
+}
+
+button {
+  margin: -48px auto 0px auto;
+  display: block;
+  margin-top: -56px !important;
+}
+
+img {
+  border-radius: 7px;
+  margin-top: -54px;
+  margin-left: -20px;
+  width: 178px;
+  height: 300px;
+}
+
+.status {
+  margin-bottom: -10px !important;
+  margin-top: -9px !important;
+}
+
+.card-title {
+  margin-top: -4px;
+}
