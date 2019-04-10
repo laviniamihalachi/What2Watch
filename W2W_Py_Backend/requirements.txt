@@ -9,3 +9,5 @@ flask-restful
 tensorflow-gpu == 1.12.0
 pillow == 5.4.1
 scikit-image
+scipy
+matplotlib
