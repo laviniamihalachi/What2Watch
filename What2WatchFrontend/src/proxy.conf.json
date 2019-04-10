@@ -1,0 +1,6 @@
+﻿{
+  "/api": {
+    "target": "https://localost:54439",
+    "secure": false
+  }
+}

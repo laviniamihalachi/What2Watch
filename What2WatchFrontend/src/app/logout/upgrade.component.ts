@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-upgrade',
+  selector: 'app-logout',
   templateUrl: './upgrade.component.html',
-  styleUrls: ['./upgrade.component.css']
 })
-export class UpgradeComponent implements OnInit {
+export class LogoutComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
+    alert("Esti blocat pe veci in aceasta pagina!");
   }
 
 }

@@ -6,7 +6,7 @@
         <mat-form-field>
           <mat-label>Filter your collection</mat-label>
           <mat-select>
-            <mat-option *ngFor="let status of statusesList" 
+            <mat-option *ngFor="let status of statusesList"
                         (onSelectionChange)="changeStatus($event)" [value]="status">
               {{status}}
             </mat-option>
@@ -14,21 +14,22 @@
         </mat-form-field>
       </div>
       <div class="col-md-9">
-        {{selectedStatus}}
+
       </div>
-      <div *ngFor="let movieCard of collectionCardsList" class="col-md-2"
-           *ngIf="selectedStatus == movieCard.status || selectedStatus == 'all'">
-        <div class="card">
-          <div class="card-header card-header-danger">
-            <h4 class="card-title ">{{movieCard.movieTitle}}</h4>
-            <p class="status">-{{movieCard.status}}-</p>
-          </div>
-          <div class="card-body">
-            <img src={{movieCard.image}}>
-            <button mat-raised-button type="submit" class="btn btn-danger pull-right btn-block" >More...</button>
+      <ng-container *ngFor="let movieCard of collectionCardsList">
+        <div *ngIf="selectedStatus == movieCard.status || selectedStatus == 'all'" class="col-md-2">
+          <div class="card">
+            <div class="card-header card-header-danger">
+              <h4 class="card-title ">{{movieCard.movieTitle}}</h4>
+              <p class="status">-{{movieCard.status}}-</p>
+            </div>
+            <div class="card-body">
+              <img src={{movieCard.image}}>
+              <button mat-raised-button type="submit" class="btn btn-danger pull-right btn-block">More...</button>
+            </div>
           </div>
         </div>
-      </div>
+      </ng-container>
     </div>
   </div>
 </div>
